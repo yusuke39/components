@@ -39,17 +39,11 @@ const App = () => {
       <p>現在の横幅 : {width}</p>
       <input onChange={changeWidth} value={width} type="number"></input>
       <Button
-        buttonName="押してみて"
+        buttonName="PUSH"
         color={color}
         backgroundColor={backgroundColor}
         height={height}
         width={width}
-      />
-      <Button
-        buttonName="これ押して"
-        color={color}
-        backgroundColor={backgroundColor}
-        height={height}
       />
     </div>
   );
