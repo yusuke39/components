@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./share/Button";
-import Form from "./share/Form";
+// import Form from "./share/Form";
 
 const App = () => {
+  const [color, setText] = useState("");
+
+  const changeColor = (e, color) => {
+    setText(() => e.target.value);
+  };
+
   return (
     <div>
-      <Form />
-      <Button buttonName="押してみて" />
-      <Button buttonName="これ押して" />
+      <p>現在の色 : {color}</p>
+      <input onChange={changeColor} value={color} type="text"></input>
+      <Button buttonName="押してみて" backgroundColor={color} />
+      <Button buttonName="これ押して" backgroundColor={color} />
     </div>
   );
 };

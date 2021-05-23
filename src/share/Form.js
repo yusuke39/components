@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const Form = (props) => {
   const [text, setText] = useState("");
 
   const changeColor = (e) => {
