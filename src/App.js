@@ -6,6 +6,7 @@ const App = () => {
   const [color, setColor] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("");
   const [height, setHeight] = useState("");
+  const [width, setWidth] = useState("");
 
   const changeColor = (e) => {
     setColor(() => e.target.value);
@@ -17,6 +18,10 @@ const App = () => {
 
   const changeheigt = (e) => {
     setHeight(() => e.target.value);
+  };
+
+  const changeWidth = (e) => {
+    setWidth(() => e.target.value);
   };
 
   return (
@@ -31,11 +36,14 @@ const App = () => {
       ></input>
       <p>現在の高さ : {height}</p>
       <input onChange={changeheigt} value={height} type="number"></input>
+      <p>現在の横幅 : {width}</p>
+      <input onChange={changeWidth} value={width} type="number"></input>
       <Button
         buttonName="押してみて"
         color={color}
         backgroundColor={backgroundColor}
         height={height}
+        width={width}
       />
       <Button
         buttonName="これ押して"
