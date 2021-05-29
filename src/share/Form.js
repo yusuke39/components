@@ -1,4 +1,5 @@
 import Button from "../share/Button";
+import React, { Fragment, useState } from "react";
 
 const Form = (props) => {
   //　練習1
@@ -11,6 +12,12 @@ const Form = (props) => {
   // const changeButtonBackgroundColor = (e) => {
   //   props.setButtonBackGroundColor(e.target.value);
   // };
+
+  const [color, setColor] = useState("");
+
+  const changeButtonColor = (e) => {
+    setColor(e.target.value);
+  };
 
   return (
     //　練習1
@@ -35,10 +42,10 @@ const Form = (props) => {
     // </>
 
     <>
-      <p>現在のボタン文字色 : {props.color}</p>
-      <input value={props.color} type="text"></input>
+      <p>現在のボタン文字色 : {color}</p>
+      <input value={color} onChange={changeButtonColor} type="text"></input>
       <div>
-        <Button />
+        <Button buttonName="PUSH" color={color} />
       </div>
     </>
   );
