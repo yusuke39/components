@@ -1,64 +1,42 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Button from "./share/Button";
 import Form from "./share/Form";
 
 const App = () => {
-  const [color, setColor] = useState("");
+  //　練習1
+  // const [color, setColor] = useState("");
   // const [backgroundColor, setBackgroundColor] = useState("");
-  // const [height, setHeight] = useState("");
-  // const [width, setWidth] = useState("");
+  // // const [height, setHeight] = useState("");
+  // // const [width, setWidth] = useState("");
 
-  const setButtonColor = (color) => {
-    setColor(() => color);
-  };
-
-  // const changeColor = (e) => {
-  //   setColor(() => e.target.value);
+  // const setButtonColor = (color) => {
+  //   setColor(() => color);
   // };
 
-  // const changeBackgroundColor = (e) => {
-  //   setBackgroundColor(() => e.target.value);
-  // };
-
-  // const changeheigt = (e) => {
-  //   setHeight(() => e.target.value);
-  // };
-
-  // const changeWidth = (e) => {
-  //   setWidth(() => e.target.value);
+  // const setButtonBackGroundColor = (backgroundColor) => {
+  //   setBackgroundColor(() => backgroundColor);
   // };
 
   return (
-    <div>
-      {/* <p>現在のボタン文字色 : {color}</p>
-      <input onChange={changeColor} value={color} type="text"></input>
-      <p>現在のボタン背景色 : {backgroundColor}</p>
-      <input
-        onChange={changeBackgroundColor}
-        value={backgroundColor}
-        type="text"
-      ></input>
-      <p>現在の高さ : {height}</p>
-      <input onChange={changeheigt} value={height} type="number"></input>
-      <p>現在の横幅 : {width}</p>
-      <input onChange={changeWidth} value={width} type="number"></input> */}
-      <Form setButtonColor={setButtonColor} color={color} />
-      <Button
-        buttonName="PUSH"
-        color={color}
-        // backgroundColor={backgroundColor}
-        // height={height}
-        // width={width}
-      />
-      <Form setButtonColor={setButtonColor} color={color} />
-      <Button
-        buttonName="PUSH"
-        color={color}
-        // backgroundColor={backgroundColor}
-        // height={height}
-        // width={width}
-      />
-    </div>
+    // 練習1
+    // <>
+    //   <Form
+    //     setButtonColor={setButtonColor}
+    //     color={color}
+    //     setButtonBackGroundColor={setButtonBackGroundColor}
+    //     backgroundColor={backgroundColor}
+    //   />
+    //   <Button
+    //     buttonName="PUSH"
+    //     color={color}
+    //     backgroundColor={backgroundColor}
+    //     // height={height}
+    //     // width={width}
+    //   />
+    // </>
+    <>
+      <Form />
+    </>
   );
 };
 
