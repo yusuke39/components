@@ -18,7 +18,7 @@ const Button = (props) => {
   });
 
   return (
-    <div>
+    <>
       <button
         style={ButtonStyle(
           props.color,
@@ -29,7 +29,7 @@ const Button = (props) => {
       >
         {props.buttonName}
       </button>
-    </div>
+    </>
   );
 };
 
