@@ -11,10 +11,10 @@ const Button = (props) => {
     border: "none",
     marginTop: 20,
     marginLeft: 20,
-    color: color ? color : "#ffffff",
+    color: color ? color : "#0d0d0d#",
     height: height ? height : 50,
     width: width ? width : 100,
-    backgroundColor: backgroundColor ? backgroundColor : "#eb6100",
+    backgroundColor: backgroundColor ? backgroundColor : "#ff8e3c",
   });
 
   return (

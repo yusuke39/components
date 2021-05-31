@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import ButtonForm from "./share/ButtonForm";
-import Icons from "./share/Icons";
+import "./css/share/All.css";
 
 const App = () => {
   //　練習1
@@ -36,8 +36,6 @@ const App = () => {
     // </>
     <>
       <ButtonForm />
-      <ButtonForm />
-      <Icons.HOME />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import Button from "./Button";
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
+import "../css/share/ButtonForm.css";
 
 const Form = (props) => {
   //　練習1
@@ -42,10 +43,19 @@ const Form = (props) => {
     // </>
 
     <>
-      <p>現在のボタン文字色 : {color}</p>
-      <input value={color} onChange={changeButtonColor} type="text"></input>
-      <div>
-        <Button buttonName="PUSH" color={color} />
+      <div className="content-wrapper">
+        <div className="form-wrapper">
+          <p>ボタンの文字色</p>
+          <input
+            className="input-size"
+            value={color}
+            onChange={changeButtonColor}
+            type="text"
+          ></input>
+        </div>
+        <div className="button-wrapper">
+          <Button buttonName="PUSH" color={color} />
+        </div>
       </div>
     </>
   );

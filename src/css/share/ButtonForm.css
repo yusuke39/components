@@ -1,0 +1,20 @@
+.content-wrapper {
+  display: flex;
+}
+
+.form-wrapper {
+  width: 15%;
+  height: 1000px;
+  background-color: #ffffff;
+  color: #0d0d0d;
+  border-right: solid 3px #0d0d0d;
+  text-align: center;
+}
+
+.button-wrapper {
+  background-color: #ffffff;
+  height: 800px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
