@@ -1,7 +1,7 @@
 const TitleForm = () => {
   return (
     <>
-      <div>タイトル</div>
+      <div>メインタイトル</div>
       <input type="text"></input>
     </>
   );
