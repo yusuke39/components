@@ -1,6 +1,5 @@
-import Button from "./Button";
+// import Button from "./Button";
 import React, { useState } from "react";
-import "../css/share/ButtonForm.css";
 
 const Form = (props) => {
   //　練習1 ===================================================================

@@ -1,5 +1,3 @@
-import "../css/share/Button.css";
-
 const Button = (props) => {
   const ButtonStyle = (color, backgroundColor, height, width) => ({
     textDecoration: "none",
