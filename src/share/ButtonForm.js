@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../css/share/ButtonForm.css";
 
 const Form = (props) => {
-  //　練習1
+  //　練習1 ===================================================================
   // Buttonコンポーネントを兄弟とした場合に親から渡す関数を使って
   // CSSの値をセットする
   // const changeButtonColor = (e) => {
@@ -13,6 +13,7 @@ const Form = (props) => {
   // const changeButtonBackgroundColor = (e) => {
   //   props.setButtonBackGroundColor(e.target.value);
   // };
+  //　練習1 ====================================================================
 
   const [color, setColor] = useState("");
 
@@ -21,7 +22,7 @@ const Form = (props) => {
   };
 
   return (
-    //　練習1
+    //　練習1 ====================================================================
     // Buttonコンポーネントを兄弟とした場合に使うjsx
     // <>
     //   <p>現在のボタン文字色 : {props.color}</p>
@@ -41,6 +42,7 @@ const Form = (props) => {
     //   <p>現在の横幅 : {width}</p>
     //   <input onChange={changeWidth} value={width} type="number"></input>
     // </>
+    //　練習1 ====================================================================
 
     <>
       <div className="content-wrapper">
@@ -53,9 +55,7 @@ const Form = (props) => {
             type="text"
           ></input>
         </div>
-        <div className="button-wrapper">
-          <Button buttonName="PUSH" color={color} />
-        </div>
+        <Button buttonName="PUSH" color={color} />
       </div>
     </>
   );
